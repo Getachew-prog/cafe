@@ -35,17 +35,14 @@ public class Order implements Serializable {
         }
     }
 }
-
 // OrderItem class
 class OrderItem implements Serializable {
     private MenuItem menuItem;
     private int quantity;
-
     public OrderItem(MenuItem menuItem, int quantity) {
         this.menuItem = menuItem;
         this.quantity = quantity;
     }
-
     // Getters and Setters
     public MenuItem getMenuItem() { return menuItem; }
     public int getQuantity() { return quantity; }
